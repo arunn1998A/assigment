@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete h1 Example</title>
+</head>
+<body>
+    <h1 id="myHeader">This is an H1 heading</h1>
+    <button id="deleteButton">Delete H1</button>
+
+    <script>
+        // JavaScript to delete the h1 when the button is clicked
+        document.getElementById("deleteButton").addEventListener("click", function() {
+            var header = document.getElementById("myHeader");
+            if (header) {
+                header.remove();
+            }
+        });
+    </script>
+</body>
+</html>
